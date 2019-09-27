@@ -16,7 +16,7 @@ class ProductsController extends Controller
 
         if($request->isMethod('post')) {
             $data = $request->all();
-
+// A TUA PRIMA
             if(empty($data['category_id'])){
                 return redirect()->back()->with('flash_message_error','Under Category is missing');
             }
